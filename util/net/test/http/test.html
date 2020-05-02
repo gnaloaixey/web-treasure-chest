@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="../../http/http.js"></script>
+    <script>
+        http.interceptor.response = function(res){
+            return 0
+        }
+        http.interceptor.request = function(conf){
+            return conf
+        }
+        http.get('http://loclhost:8080').then(res=>{
+            console.log(res);
+        }).catch(err=>{
+            console.log(err);
+        })
+
+    </script>
+</body>
+</html>

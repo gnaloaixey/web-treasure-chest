@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app" style="height: 3000px;">hhh</div>
+    <script src="./mousewheel.js"></script>
+    <script>
+        mousewheel(app,act,{prevent:true});
+        function act(e,hook) {
+            hook.stop();
+            hook.prevent();
+            console.log(e);
+        }
+    </script>
+</body>
+</html>

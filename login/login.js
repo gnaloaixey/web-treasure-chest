@@ -1,0 +1,3 @@
+function login(url,data) {
+    
+}
